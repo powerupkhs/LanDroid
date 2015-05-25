@@ -11,40 +11,26 @@ This is :
 
 # Composition
 Landroid(android)
-* 
+* 유선 네트워크를 사용할 클라이언트
+* 네트워크 활성/비활성 기능
+* USB 테더링 간편설정 기능
+* 포트 포워딩 기능
+* 핫스팟을 통해 유선네트워크를 와이파이처럼 사용하는 기능
+* IP 설정 기능
+* 유선 네트워크 리다이렉트를 담당하는 라즈베리 파이의 상태 확인 기능
 
-Server
-* 1. get Bitmap using getDrawingCache(). 
-* 2. Bitmap to Byte[]
-* 3. Byte[] to Encoder
-* 4. get Byte[] (encoded data) from Encoder
-* 5. Transfer Byte[] to Client
+Landroid(linux)
+* RJ45를 입력받아 유선 네트워크를 안드로이드 스마트폰으로 리다이렉트
+* 스마트폰이 연결되면 자동으로 인식하여 필요한 소프트웨어를 설치
+* 리다이렉트에 필요한 네트워크 설정
+* 여러 대의 안드로이드 스마트폰 연결 가능
+* 연결된 안드로이드 스마트폰에서 설정 변경 기능
 
-Client
-* 1. Receive data from Server
-* 2. Received data to Byte[]
-* 3. Byte[] to Decoder
-* 4. Decoder to Surface
-* 5. Rendering with the Surface
+Serveroid(android)
+* 스마트폰을 웹/파일 서버로 사용가능하게 하는 어플리케이션
+* IP/Port 설정 기능
+* 요청에 따른 응답 생성 및 전송을 통해 웹/파일 서버로 사용 가능
+* LanDroid와 Serveroid를 함께 사용 함으로서 공기계를 실제 서버처럼 사용 가능
 
-However :
-* It's not implemented layout.
-* It's not encoded with the surface. So, need to RGB2YUV and NV21->NV12. Results in a low performance. 
-
-# Feature
-* Application Mirroring
-* H.264 Encoding, Decoding
-* It's not used MediaExtractor.
-
-# Requirements
-* Requires minimum API 16 (Android 4.1)
-
-
-# Android API
-* MediaCodec : http://developer.android.com/reference/android/media/MediaCodec.html
-
-# Reference
-* Encoder : http://bigflake.com/mediacodec/
- 
-# Image
-![alt tag](https://github.com/zerstyu/MediaCodec_Mirroring/blob/master/mediacodec.PNG)
+# Demonstration Video
+* https://www.youtube.com/watch?v=oiBMFBLF4RY

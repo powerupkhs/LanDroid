@@ -1,0 +1,36 @@
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/commend_layout_root"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+        
+        <TextView android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:textColor="#000000"
+            android:textSize = "14sp"
+            android:text="Linux commend input"/>
+        <EditText android:id="@+id/inputEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="38dip"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:hint="commend input"/>
+        
+        <TextView  
+            android:id="@+id/commendResult"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:textColor="#000000"
+            android:textSize = "14sp"
+            android:text="result" 
+            />   
+
+</LinearLayout>
